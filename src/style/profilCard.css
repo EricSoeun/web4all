@@ -1,0 +1,81 @@
+.profilSidebarCard {
+    /* background: #172436; */
+    /* background: -webkit-linear-gradient(top left, #172436, #10151D);
+    background: -moz-linear-gradient(top left, #172436, #10151D);
+    background: linear-gradient(to bottom right, #172436, #10151D); */
+    background: rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    height: fit-content;
+    border: 2px #504549 solid;
+    box-shadow: 0 0 0 2px #8d7680, 0 0.425em 0 0 #443f3f;
+    width: 80%;
+}
+
+.profil-username {
+    font-weight: bold;
+    text-shadow: rgb(129, 123, 97) 1px 0 10px;
+}
+
+.MuiLinearProgress-root {
+    border: 1px solid rgb(236, 236, 236);
+    height: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 11px -1px #4fefff;
+    box-shadow: 0px 0px 11px -1px #4fefff;
+}
+
+.profil-icon {
+    width: 4.5vh;
+    height: auto;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.profil-icon:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.MuiAvatar-img {
+    transition: 0.2s ease-in-out;
+}
+
+.MuiAvatar-img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+.leaderboard-frame {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-height: 550px;
+    overflow: auto;
+    /* //Mozilla : */
+    scrollbar-color: rgba( 0, 0, 0, 0.3) rgba( 0, 0, 0, 0.1);
+    scrollbar-width: thin;}
+
+    /* //Chrome : */
+    .leaderboard-frame::-webkit-scrollbar {
+      width: 10px;
+      color: white;
+      background: rgba( 0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .leaderboard-frame ::-webkit-scrollbar-thumb {
+      height: 5px;
+      width: 5px;
+      background: rgba( 0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    

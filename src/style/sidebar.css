@@ -1,0 +1,37 @@
+.theme-name-sidebar {
+  background-color: rgba(104, 104, 104, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sidebar-content {
+  width: 100%;
+  background: rgba( 255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 0px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  min-height: 100vh;
+}
+
+.module-container {
+  background-color: rgb(218, 160, 160);
+}
+
+.single-module {
+  background-color: cadetblue;
+}
+
+.game-not-finished {
+  color: orange;
+}
+
+.game-finished {
+  color: green;
+}
+
+.game-link {
+  font-family: Jost;
+}

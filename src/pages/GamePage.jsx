@@ -48,7 +48,7 @@ export default function GamePage() {
 
   const [gameNotification, setGameNotification] = useState("");
 
-  console.log('gameNotification: ', gameNotification);
+//   console.log('gameNotification: ', gameNotification);
 
   function displayNotification() {
       if (gameNotification) {

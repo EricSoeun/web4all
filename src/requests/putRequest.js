@@ -1,9 +1,8 @@
 // #region import
 import axios from "axios";
+import { baseURL } from "./api";
 // #endregion import
 
-let serverUrl = "https://web4all-back.herokuapp.com/";
-// serverUrl = "http://localhost:3000/";
 
 function createQueryString(params) {
     let query = [];
@@ -15,7 +14,7 @@ function createQueryString(params) {
 
 export function leveling(loginData) {
     return axios
-        .put(`${serverUrl}api/users/leveling`, createQueryString(loginData), {
+        .put(`${baseURL}/api/users/leveling`, createQueryString(loginData), {
             headers: { "content-type": "application/x-www-form-urlencoded" },
         })
         .then((res) => res.data);

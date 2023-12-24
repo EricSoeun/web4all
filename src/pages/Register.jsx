@@ -150,6 +150,7 @@ export default function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     postNewUser(stateRegister);
+      console.log(stateRegister)
     history.push({
       pathname: "/login",
       state: {

@@ -8,23 +8,23 @@ import { baseURL } from "./api";
 
 // #region getAll
 export function getAllCategories() {
-  return axios.get(`${baseURL}api/categories/list`).then((res) => res.data);
+  return axios.get(`${baseURL}/api/categories/list`).then((res) => res.data);
 }
 
 export function getAllThemes() {
   return axios
-    .get(`${baseURL}api/categories/themes/list`)
+    .get(`${baseURL}/api/categories/themes/list`)
     .then((res) => res.data);
 }
 
 export function getAllModules() {
   return axios
-    .get(`${baseURL}api/categories/modules/list`)
+    .get(`${baseURL}/api/categories/modules/list`)
     .then((res) => res.data);
 }
 
 export function getAllGames() {
-  return axios.get(`${baseURL}api/games/list`).then((res) => res.data);
+  return axios.get(`${baseURL}/api/games/list`).then((res) => res.data);
 }
 
 export function getAllUsers() {

@@ -1,9 +1,8 @@
 // #region import
 import axios from "axios";
-import { baseURL } from "./api";
+import { baseURL, config } from "./api";
 // #endregion import
 
-const serverUrl = 'http://localhost:3000/'
 
 function createQueryString(params) {
     let query = [];
@@ -36,16 +35,11 @@ function errorHandler(error) {
 }
 
 
-const config = {
-    headers: {
-        'Content-Type': 'application/json',
-    },
-}
 
 export function postNewUser(data) {
 
     return axios
-        .post(`${baseURL}/api/users/signup`, data, { config })
+      .post(`${baseURL}/api/users/signup`, data, { config })
         .then((res) => res.data)
         .catch(errorHandler);
 }
